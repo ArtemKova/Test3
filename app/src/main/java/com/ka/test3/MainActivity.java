@@ -126,9 +126,7 @@ public class MainActivity extends AppCompatActivity {
                         .setUserAgentValue(BuildConfig.APPLICATION_ID);
                 MapView mapView = findViewById(R.id.mapView);
 //        здесь задается поставщик картинки карты
-                // можно выбрать подходящий вариант, подробнее см. в документации
-                // mapView.setUseSafeCanvas(false);
-                // GeoPoint startPoint = new GeoPoint(68.9800, 33.0504);
+
                 mapView.setTileSource(TileSourceFactory.DEFAULT_TILE_SOURCE);
                 mapView.setBuiltInZoomControls(true);
                 mapView.setMultiTouchControls(true);
