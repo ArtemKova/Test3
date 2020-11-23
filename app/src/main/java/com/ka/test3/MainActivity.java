@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(Void... params) {
             // получаем данные с сервера
             try {
-                URL url = new URL("***.json");//Вставить ссылку на координаты в
+                URL url = new URL("***.json");//Вставить ссылку на координаты
 
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");
