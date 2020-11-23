@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.1"
+    defaultConfig {
+        applicationId "com.ka.test3"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+//compile 'org.slf4j:slf4j-android:1.7.25'
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'org.osmdroid:osmdroid-android:5.4.1:release@aar'
+   // implementation 'org.slf4j:slf4j-android-1.7.25:release@aar'
+}
+
+// This is all you need to display an OSM map using osmdroid package osmdemo.demo; import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
+//import org.osmdroid.util.GeoPoint;
+//import org.osmdroid.views.MapController;
+//import org.osmdroid.views.MapView;
+//import android.app.Activity;
+//import android.os.Bundle;
+
+//public class OsmdroidDemoMap extends Activity {
+//    private MapView mMapView;
+//    private MapController mMapController;
+
+ //   @Override public void onCreate(Bundle savedInstanceState) {
+ //       super.onCreate(savedInstanceState);
+ //       setContentView(R.layout.osm_main);
+ //       mMapView = (MapView) findViewById(R.id.mapview);
+ //       mMapView.setTileSource(TileSourceFactory.DEFAULT_TILE_SOURCE);
+ //       mMapView.setBuiltInZoomControls(true); mMapController = (MapController)
+ //       mMapView.getController(); mMapController.setZoom(13);
+  //      GeoPoint gPt = new GeoPoint(51500000, -150000); mMapController.setCenter(gPt); }
+//} /* HAVE THIS AS YOUR osm_main.xml ---------------------------------------------------------- XML START <?xml version="1.0" encoding="utf-8"?> <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" > <org.osmdroid.views.MapView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/mapview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:clickable="true" /> </LinearLayout> ---------------------------------------------------------- XML END Include slf4j-android-1.5.8.jar and osmdroid-android-4.1.jar in the build path (Google search for where to get them from) */

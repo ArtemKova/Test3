@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Test3</string>
+    <string name="Answer">Введите начальную точку</string>
+    <string name="Answer1">Введите конечную точку</string>
+    <string name="Answer3">Не больше 5000 точек</string>
+    <string name="TextView">Введите диапазон точек. Не больше 5000. </string>
+
+</resources>
